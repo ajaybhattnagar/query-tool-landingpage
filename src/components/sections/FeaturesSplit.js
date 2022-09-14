@@ -61,20 +61,41 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
+                <h3 className="mt-0 mb-12">
+                  Download the tool.
+                </h3>
+                <p className="m-0">
+                  Use the link to download the application. It is a simple .exe file that you can run on your computer.
+                </p>
+              </div>
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                  <a href="https://www.dropbox.com/s/idbreba86cijwi1/Visuify%20-%20Query%20tool%20Setup%201.1.0.zip?dl=1">
+                    <text style={{color: 'white', fontSize: '20px', textDecorationLine: 'underline', marginLeft: '5rem'}}>Download</text>
+                  </a>
+              </div>
+            </div>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Super easy setup
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Setup the tool to run on your own server in seconds.
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Install the tool and open it.<br />
+                  Navigate to the root location and open the config.json file.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -83,7 +104,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/config.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -93,14 +114,16 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Fast reloads
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Select a query.
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Pick any query to run <br/>
+                  You will access to what the query does the query itself. <br/>
+                  You can also see the results of the query and can use the same as your starting point.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -109,7 +132,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/mainpage.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -119,14 +142,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Work with the data within the app.
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Download the data.
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  Once the data loads. Use the export button to download the data in a csv file or an excel file.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -135,7 +158,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/loadedquery.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
