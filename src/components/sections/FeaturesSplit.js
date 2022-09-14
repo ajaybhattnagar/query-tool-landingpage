@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import FooterSocial from '../layout/partials/FooterSocial';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -78,9 +78,9 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                  <a href="https://www.dropbox.com/s/idbreba86cijwi1/Visuify%20-%20Query%20tool%20Setup%201.1.0.zip?dl=1">
-                    <text style={{color: 'white', fontSize: '20px', textDecorationLine: 'underline', marginLeft: '5rem'}}>Download</text>
-                  </a>
+                <a href="https://www.dropbox.com/s/idbreba86cijwi1/Visuify%20-%20Query%20tool%20Setup%201.1.0.zip?dl=1">
+                  <text style={{ color: 'white', fontSize: '20px', textDecorationLine: 'underline', marginLeft: '5rem' }}>Download</text>
+                </a>
               </div>
             </div>
 
@@ -94,7 +94,8 @@ const FeaturesSplit = ({
                 </h3>
                 <p className="m-0">
                   Install the tool and open it.<br />
-                  Navigate to the root location and open the config.json file.
+                  Navigate to the root location and open the config.json file.<br />
+                  Add your own server details and save the file.<br />
                 </p>
               </div>
               <div className={
@@ -120,8 +121,8 @@ const FeaturesSplit = ({
                   Select a query.
                 </h3>
                 <p className="m-0">
-                  Pick any query to run <br/>
-                  You will access to what the query does the query itself. <br/>
+                  Pick any query to run <br />
+                  You will access to what the query does the query itself. <br />
                   You can also see the results of the query and can use the same as your starting point.
                 </p>
               </div>
@@ -168,6 +169,10 @@ const FeaturesSplit = ({
           </div>
         </div>
       </div>
+
+      <FooterSocial />
+      <div style={{ height: '50px' }}></div>
+
     </section>
   );
 }
